@@ -12,6 +12,7 @@ function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
 
+// 进一步优化build速率
 const happyPackPlugin = [
   new HappyPack({
     id: 'happy-babel-js',
