@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      body {
+        counter-reset: numa;
+      }
+      input:checked {
+        counter-increment: numa;
+      }
+      .total::after {
+        content: counter(numa);
+      }
+    </style>
+</head>
+<body>
+  <input type="checkbox" />
+  <input type="checkbox" />
+  <input type="checkbox" />
+  <input type="checkbox" />
+  <span class="total"></span>
+</body>
+</html>
